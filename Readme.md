@@ -3,6 +3,7 @@
     
     A simple program that draws lines between mouse clicks. The lines are drawn
     using the Xiaolin Wu's Line Algorithm, i.e. the lines are anti-aliased.
+    SFML was used for graphics.
     
     Controls: 
     Left Mouse Button : Add a point to the current layer
@@ -12,4 +13,6 @@
                         
     Space:              Create a new layer from all the points in the current 
                         layer. 
+    
+    
         
