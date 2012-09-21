@@ -158,12 +158,12 @@ static float rfpart(float x)
 static void plot(sf::VertexArray& va, int x, int y, float c, const sf::Color& color)
 {
 	const sf::Color newColor(static_cast<sf::Uint8>(color.r * c), 
-		                     static_cast<sf::Uint8>(color.g * c), 
-							 static_cast<sf::Uint8>(color.b * c));	
+                             static_cast<sf::Uint8>(color.g * c), 
+                             static_cast<sf::Uint8>(color.b * c));	
 
 	const sf::Vertex vertex(sf::Vector2f(static_cast<float>(x), 
-		                                 static_cast<float>(y)), 
-							newColor);
+                                         static_cast<float>(y)), 
+                            newColor);
 
 	va.append(vertex);
 }
