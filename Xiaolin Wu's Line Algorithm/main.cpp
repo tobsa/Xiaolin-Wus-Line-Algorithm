@@ -1,9 +1,18 @@
+////////////////////////////////////////////////////////////////////////////////
+// main.cpp
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+// Headers
+////////////////////////////////////////////////////////////////////////////////
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Window/Event.hpp>
 #include "Source/XiaolinWusLineAlgorithm.hpp"
-
 #include <iostream>
 
+////////////////////////////////////////////////////////////////////////////////
+// Entry point of application
+////////////////////////////////////////////////////////////////////////////////
 int main()
 {
 	sf::RenderWindow renderWindow(sf::VideoMode(800,600), "Xiaolin Wu's Line Algorithm");
@@ -24,6 +33,10 @@ int main()
 			{
 				if(event.key.code == sf::Keyboard::Escape)
 					renderWindow.close();
+				if(event.key.code == sf::Keyboard::Space)
+				{
+
+				}
 			}
 			if(event.type == sf::Event::MouseButtonPressed)
 			{
@@ -46,6 +59,7 @@ int main()
 			drawLine(renderWindow, points[points.size() - 1].x, points[points.size() - 1].y, x , y, sf::Color::White);
 
 		std::cout << points.size() << std::endl;
+
 		renderWindow.display();
 	}
 

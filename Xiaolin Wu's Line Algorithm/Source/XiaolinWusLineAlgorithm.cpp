@@ -6,7 +6,7 @@
 // Headers
 ////////////////////////////////////////////////////////////////////////////////
 #include "XiaolinWusLineAlgorithm.hpp"
-#include <SFML/Graphics/RenderWindow.hpp>
+#include <SFML/Graphics/RenderTarget.hpp>
 #include <SFML/Graphics/Color.hpp>
 #include <SFML/Graphics/VertexArray.hpp>
 
@@ -36,7 +36,7 @@ static float rfpart(float x);
 static void plot(sf::VertexArray& va, int x, int y, float c, const sf::Color& color);
 
 ////////////////////////////////////////////////////////////////////////////////
-void drawLine(sf::RenderWindow& renderWindow, float x1, float y1, float x2, float y2, const sf::Color& color)
+void drawLine(sf::RenderTarget& target, float x1, float y1, float x2, float y2, const sf::Color& color)
 {
 	float dx = x2 - x1;
 	float dy = y2 - y1;
@@ -127,7 +127,7 @@ void drawLine(sf::RenderWindow& renderWindow, float x1, float y1, float x2, floa
 		}
 	}
 
-	renderWindow.draw(va);
+	target.draw(va);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
