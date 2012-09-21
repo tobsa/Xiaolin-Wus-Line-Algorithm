@@ -18,5 +18,13 @@
     <ClCompile Include="..\..\Xiaolin Wu%27s Line Algorithm\Xiaolin Wu%27s Line Algorithm\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Xiaolin Wu%27s Line Algorithm\Xiaolin Wu%27s Line Algorithm\Source\XiaolinWusLineAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Xiaolin Wu%27s Line Algorithm\Xiaolin Wu%27s Line Algorithm\Source\XiaolinWusLineAlgorithm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

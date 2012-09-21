@@ -69,6 +69,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Xiaolin Wu%27s Line Algorithm\Xiaolin Wu%27s Line Algorithm\main.cpp" />
+    <ClCompile Include="..\..\Xiaolin Wu%27s Line Algorithm\Xiaolin Wu%27s Line Algorithm\Source\XiaolinWusLineAlgorithm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Xiaolin Wu%27s Line Algorithm\Xiaolin Wu%27s Line Algorithm\Source\XiaolinWusLineAlgorithm.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
