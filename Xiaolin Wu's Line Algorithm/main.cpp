@@ -1,9 +1,12 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Window/Event.hpp>
+#include "Source/XiaolinWusLineAlgorithm.hpp"
 
 int main()
 {
 	sf::RenderWindow renderWindow(sf::VideoMode(800,600), "Xiaolin Wu's Line Algorithm");
+
+
 
 	while(renderWindow.isOpen())
 	{
@@ -19,7 +22,11 @@ int main()
 			}
 		}
 
+		float x = sf::Mouse::getPosition(renderWindow).x;
+		float y = sf::Mouse::getPosition(renderWindow).y;
+
 		renderWindow.clear();
+		drawLine(renderWindow,400,300,x,y,sf::Color::White);
 		renderWindow.display();
 	}
 
